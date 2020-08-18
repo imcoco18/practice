@@ -1,0 +1,152 @@
+$site-color: #082b48;
+$background-color: #e3fcf4;
+
+
+
+
+
+;
+
+
+// 全体
+body {
+  color: $site-color;
+  font-family: 'Verdana','Geneva','Tahoma',sans-serif;
+  line-height: 1.5;
+
+  & .container {
+    width: 90%;
+    min-width: 980px;
+    margin: auto;
+  }
+  & .clear::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  & ul {
+    list-style: none;
+  }
+  & a {
+    text-decoration: none;
+    color: $site-color;
+    font-weight: 600;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+  }
+  & section {
+    padding: 60px 0;
+  }
+  & .section-title {
+    font-size: 32px;
+    margin: 0 0 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+}
+
+
+// header
+header {
+  padding: 20px 0;
+}
+.header-left {
+  float: left;
+
+  & .header-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.header-right {
+  float: right;
+
+  & li {
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+  }
+}
+
+// top
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+  text-align: center;
+  padding: 80px;
+
+  & .top-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+
+  & .top-subtitle {
+    font-size: 18px;
+  }
+}
+
+// about
+.about-left {
+  width: 48%;
+  float: left;
+}
+.about-right {
+  width: 48%;
+  float: right;
+}
+
+// course
+.course {
+  background-color: $background-color;
+
+  & .course-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// contact
+.contact-message {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+input[type="email"] {
+  width: 600px;
+  border: 3px solid #d8d8d8;
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+  margin: auto;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+.btn-register {
+  background-color: #ec6d64;
+  border-radius: 4px;
+}
+.btn {
+  padding: 20px 60px;
+  display: block;
+  margin: auto;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+}
+
+// footer
+footer {
+  background-color: $site-color;
+  color: #ffffff;
+  padding: 20px 0;
+
+  & .copyright {
+    font-size: 12px;
+    float: right;
+  }
+}
