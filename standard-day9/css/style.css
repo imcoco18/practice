@@ -21,6 +21,23 @@ body img {
   border: none;
 }
 
+body .section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+}
+
+body .section-title::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #3F51B5;
+  opacity: 1;
+}
+
 header {
   padding: 30px;
   background-color: #3F51B5;
@@ -120,24 +137,7 @@ header a.is-active::after {
 .card {
   background-color: #EFEFEF;
   color: #333333;
-}
-
-.card .section-title {
-  text-align: center;
-  font-size: 48px;
-  font-weight: bold;
-  padding-top: 100px;
-  position: relative;
-}
-
-.card .section-title::after {
-  content: "";
-  display: block;
-  margin: 8px auto 0 auto;
-  width: 60px;
-  height: 4px;
-  background-color: #3F51B5;
-  opacity: 1;
+  padding: 100px 0;
 }
 
 .card .card-items {
@@ -174,4 +174,34 @@ header a.is-active::after {
   color: #333333;
   font-size: 16px;
   font-weight: bold;
+}
+
+.news {
+  padding: 100px 0;
+}
+
+.news .container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.news-wrapper {
+  display: flex;
+}
+
+.news-wrapper .news-meta {
+  width: 185px;
+  display: flex;
+}
+
+.news-wrapper .news-meta .news-label {
+  width: 80px;
+}
+
+.news-wrapper .news-meta .news-label a {
+  padding: 8px;
+}
+
+.news-wrapper .news-text {
+  width: calc(100% - 185px);
 }

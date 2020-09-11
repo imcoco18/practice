@@ -39,6 +39,22 @@ body {
     height: auto;
     border: none;
   }
+
+  & .section-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+  }
+  & .section-title::after {
+    content: "";
+    display: block;
+    margin: 8px auto 0 auto;
+    width: 60px;
+    height: 4px;
+    background-color: $site-color;
+    opacity: 1;
+  }
 }
 
 // header
@@ -140,23 +156,8 @@ header {
 .card {
   background-color: $card-background-color;
   color: $font-color;
+  padding: 100px 0;
 
-  & .section-title {
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    padding-top: 100px;
-    position: relative;
-  }
-  & .section-title::after {
-    content: "";
-    display: block;
-    margin: 8px auto 0 auto;
-    width: 60px;
-    height: 4px;
-    background-color: $site-color;
-    opacity: 1;
-  }
   & .card-items {
     padding: 0 40px;
     display: flex;
@@ -187,5 +188,35 @@ header {
     color: $font-color;
     font-size: 16px;
     font-weight: bold;
+  }
+}
+
+//news
+.news {
+  padding: 100px 0;
+
+  & .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+.news-wrapper {
+  display: flex;
+
+  & .news-meta {
+    width: 185px;
+    display: flex;
+
+    & .news-label {
+      width: 80px;
+
+      & a {
+        padding: 8px;
+
+      }
+    }
+  }
+  & .news-text {
+    width: calc(100% - 185px); 
   }
 }
