@@ -116,3 +116,62 @@ header a.is-active::after {
   padding: 24px 120px;
   max-width: 100%;
 }
+
+.card {
+  background-color: #EFEFEF;
+  color: #333333;
+}
+
+.card .section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 100px;
+  position: relative;
+}
+
+.card .section-title::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #3F51B5;
+  opacity: 1;
+}
+
+.card .card-items {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .card-item {
+  width: calc(33.33333333% - 24px * 2 / 3);
+  margin-right: 24px;
+  margin-top: 24px;
+  background-color: #FFFFFF;
+}
+
+.card .card-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card .media {
+  padding: 16px;
+  display: block;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card .card-title {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card .card-text {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
