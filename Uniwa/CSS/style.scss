@@ -24,11 +24,15 @@ a:hover {
   width: 90%;
   min-width: 980px;
   margin: 0 auto;
+  padding: 60px 0;
 }
 .clear::after {
   content: "";
   clear: both;
   display: block;
+}
+.orange {
+  color: $site-color;
 }
 
 
@@ -36,8 +40,9 @@ a:hover {
 /* header */
 header {
   padding: 20px 0;
-
-
+  & .container {
+    padding: 0;
+  }
 
 }
 .header-left {
@@ -72,5 +77,44 @@ header {
 .top {
   background-image: url(../img/uniwa1.jpg);
   background-size: cover;
-  width: 500px;
+  height: 600px;
+}
+
+//about
+.about-left {
+  width: 65%;
+  float: left;
+  padding: 50px;
+
+  & .about-heading {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+}
+.about-right {
+  width: 35%;
+  float: right;
+  & img {
+    text-align: center;
+ 
+  }
+}
+
+//item
+.item {
+
+  & .item-heading {
+    font-size: 40px;
+    text-align: center;
+  }
+
+}
+
+//contact
+.contact {
+
+  & .contact-heading {
+    font-size: 40px;
+    text-align: center;
+  }
 }
