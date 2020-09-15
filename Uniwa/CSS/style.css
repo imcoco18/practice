@@ -89,8 +89,12 @@ header .container {
 }
 
 .about-left .about-heading {
-  font-size: 40px;
+  font-size: 50px;
   padding-bottom: 40px;
+}
+
+.about-left .about-text {
+  font-size: 18px;
 }
 
 .about-right {
@@ -99,7 +103,31 @@ header .container {
 }
 
 .about-right img {
+  border-radius: 20px;
+  box-shadow: 0 0 50px #fff;
+}
+
+.feature .feature-heading {
+  font-size: 40px;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.feature img {
+  width: 350px;
+  border-radius: 50%;
+  padding-bottom: 30px;
+}
+
+.feature .feature-wrapper {
+  display: flex;
+  justify-self: space-between;
+}
+
+.feature .feature-box {
+  padding: 10px;
+  width: 400px;
+  word-wrap: break-word;
 }
 
 .item .item-heading {
